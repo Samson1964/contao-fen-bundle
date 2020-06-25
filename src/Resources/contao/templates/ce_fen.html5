@@ -1,0 +1,22 @@
+<div class="<?= $this->class ?> block"<?= $this->cssID ?> style="<?php if ($this->margin): ?><?= trim($this->margin); ?><?php endif; ?> <?php if ($this->style): ?><?= $this->style ?><?php endif; ?>">
+
+<?php if ($this->headline): ?>
+<<?= $this->hl; ?>><?= $this->headline; ?></<?= $this->hl ?>>
+<?php endif; ?>
+
+<?php if ($this->floatClass == "below"): ?>
+	<?= $this->text ?>
+<?php endif; ?>
+
+<figure class="image_container float_<?= $this->floatClass ?>" style="width:<?= $this->diasize ?>px;<?php if($this->alignment): ?> float:<?= $this->alignment ?>;<?php endif; ?>">
+<img src="/bundles/contaofen/fen.php?<?= $this->params ?>" width="<?= $this->diasize ?>" alt="<?= $this->caption ?>"<?php if ($this->caption): ?> title="<?= $this->caption ?>"<?php endif; ?>>
+<?php if ($this->caption): ?>
+	<figcaption class="caption" style="width:<?= $this->diasize ?>px"><?= $this->caption ?></figcaption>
+<?php endif; ?>
+</figure>
+
+<?php if ($this->floatClass != "below"): ?>
+	<?= $this->text ?>
+<?php endif; ?>
+
+</div>
