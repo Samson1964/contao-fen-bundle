@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You cannot access this file directly!');
+<?php
 
 /**
  * Contao Open Source CMS
@@ -14,7 +14,7 @@
 /**
  * Palettes
  */
-if($GLOBALS['TL_CONFIG']['fen_everdefault'])
+if(isset($GLOBALS['TL_CONFIG']['fen_everdefault']))
 {
 	// Die Voreinstellungen haben die höhere Priorität. Deshalb werden einige Felder ausgeblendet.
 	$GLOBALS['TL_DCA']['tl_content']['palettes']['fen'] = '{type_legend},type,headline;{fen_legend},fen_code,fen_untertitel;{fendarstellung_legend},fen_brettdrehen;{fentext_legend},fen_text,fen_textfluss;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space;{invisible_legend:hide},invisible,start,stop';

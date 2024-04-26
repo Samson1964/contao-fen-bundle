@@ -32,7 +32,7 @@ class FEN extends \ContentElement
 		$this->Template = new \FrontendTemplate($this->strTemplate);
 
 		// TRUE, wenn Voreinstellungen die Element-Einstellungen überschreiben sollen
-		$default = $GLOBALS['TL_CONFIG']['fen_everdefault'];
+		$default = @$GLOBALS['TL_CONFIG']['fen_everdefault'];
 
 		// Parameter zuweisen
 		$fen_code = $this->fen_code;
