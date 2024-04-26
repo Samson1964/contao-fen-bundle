@@ -1,5 +1,9 @@
 # FEN - Schachdiagramme
 
+## Version 1.1.0 (2024-04-26)
+
+* Add: PHP-8-Kompatibilität in composer.json
+
 ## Version 1.0.1 (2020-06-25)
 
 * Fix: Namespace-Problem in FEN.php
